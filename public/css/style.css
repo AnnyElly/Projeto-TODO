@@ -12,6 +12,7 @@
     --button-color: #494C6B;
     --bg-main: #FAFAFA;
     --bg-tarefas: #fff;
+    --box-shadow: rgba(194, 195, 214, 0.50);
 
 }
 
@@ -74,5 +75,30 @@ main {
 
 .tarefas {
     background: var(--bg-tarefas);
+    box-shadow: var(--box-shadow);
+    border-radius: 0.3125rem;
+    margin-top: -1.5rem;
+
+}
+
+.tarefas .tarefa {
+    padding: 1rem 1.25rem;
+}
+
+.tarefas form {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tarefa div{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.tarefa button {
+    border: none;
+    background: none;
 
 }
