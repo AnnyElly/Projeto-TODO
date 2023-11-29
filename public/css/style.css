@@ -10,10 +10,17 @@
     --input-box-shadow: rgba(194, 195, 214, 0.50);
     --input-color: #494C6B;
     --button-color: #494C6B;
-    --bg-main: #FAFAFA;
+    --bg-body: #FAFAFA;
     --bg-tarefas: #fff;
     --box-shadow: rgba(194, 195, 214, 0.50);
+    --border-color: #E3e4f1;
+    --text-color: #494c68;
+    --info-text-color: #9495a5;
 
+}
+
+body {
+    background: var(--bg-body);
 }
 
 header{
@@ -68,9 +75,9 @@ header form button {
 }
 
 main {
-    background: var(--bg-main);
+
     min-height: calc(100vh - 12.5rem);
-    padding-inline: 1.5rem;
+    padding-inline: 1.75rem;
 }
 
 .tarefas {
@@ -79,10 +86,16 @@ main {
     border-radius: 0.3125rem;
     margin-top: -1.5rem;
 
+
 }
 
 .tarefas .tarefa {
     padding: 1rem 1.25rem;
+}
+
+.tarefas .tarefa + .tarefa {
+    border-top: 1px solid  var(--border-color);
+
 }
 
 .tarefas form {
@@ -95,6 +108,9 @@ main {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+
+    color: var(--text-color);
+    font-size: 0.75rem;
 }
 
 .tarefa button {
@@ -102,3 +118,12 @@ main {
     background: none;
 
 }
+
+.informações {
+    border-top: 1px solid var(--border-color);
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
