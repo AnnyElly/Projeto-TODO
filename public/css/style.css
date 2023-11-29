@@ -33,7 +33,12 @@ header{
     padding: 3rem 1.75rem 0;
 }
 
-header div {
+header > div {
+    max-width: 33.75rem;
+    margin-inline: auto;
+}
+
+header div div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -86,7 +91,8 @@ main {
     border-radius: 0.3125rem;
     margin-top: -1.5rem;
 
-
+    max-width: 33.75rem;
+    margin-inline: auto;
 }
 
 .tarefas .tarefa {
@@ -129,9 +135,14 @@ main {
     
 }
  
-.informações a , .botoes a {
+.informações a , 
+.botoes a {
     text-decoration: none;
     color: var(--info-text-color);
+}
+
+.informações .botoes {
+    display: none;
 }
 
 .botoes {
@@ -139,6 +150,9 @@ main {
     background: var(--bg-tarefas);
     border-radius: 0.3125rem;
     margin-top: 1rem;
+    max-width: 33.75rem;
+    margin-inline: auto;
+
     display: flex;
     justify-content: center;
     gap: 1.2rem;
@@ -147,3 +161,31 @@ main {
     
 }
 
+@media(min-width: 1000px) {
+    section.botoes {
+        display: none;
+ 
+    }
+
+    .informações .botoes{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .tarefa button {
+        visibility: hidden;
+    }
+
+    .tarefa input:hover, 
+    .tarefa label:hover,
+    .tarefa button:hover {
+        cursor: pointer;
+    }
+
+
+    .tarefa:hover button {
+        visibility: initial;
+
+    }
+}
