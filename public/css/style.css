@@ -10,17 +10,39 @@
     --bg-header-desktop: url(../imagens/bg-header-desktop-light.png);
     --input-box-shadow: rgba(194, 195, 214, 0.50);
     --input-color: #494C6B;
+    --input-bg: #fff;
     --placerholder-color:#9495a5;
-    --button-color: #393a4b;
-    --button-color-hover: #494C6B;
+    --button-color: #494C6B;
+    --button-color-hover: #393a4b;
     --bg-body: #FAFAFA;
     --bg-tarefas: #fff;
-    --box-shadow: rgba(194, 195, 214, 0.50);
+    --box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50);
     --border-color: #E3e4f1;
     --text-color: #494c68;
     --info-text-color: #9495a5;
     --info-button-hover: #494C6B;
     --info-button-active:#3a7cfd;
+
+}
+
+body.dark {
+    --bg-header-mobile: url(../imagens/bg-header-mobile-dark.png);
+    --bg-header-desktop: url(../imagens/bg-header-desktop-dark.png);
+    --input-box-shadow: rgba(0, 0, 0, 0.50);
+    --input-color: #c8cbe7;
+    --input-bg: #252730;
+    --placerholder-color:#767992;
+    --button-color: #252730;
+    --button-color-hover: #585e7e;
+    --bg-body: #171823;
+    --bg-tarefas: #252730;
+    --box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.50);
+    --border-color: #393a4b;
+    --text-color: #c8cbe7;
+    --info-text-color: #585e7e;
+    --info-button-hover: #e3e4f1;
+    --info-button-active:#3a7cfd;
+
 
 }
 
@@ -72,6 +94,8 @@ header form input {
     outline: none;
     font-size: 0.75rem;
     color: var(--input-color);
+    background: var(--input-bg);
+
 
 }
 
