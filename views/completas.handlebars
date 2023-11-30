@@ -15,7 +15,7 @@
                  <input type="checkbox" id="tarefa-{{this.id}}" onchange="completarTarefa( {{this.id}})">
                  <label for="tarefa-{{this.id}}">{{this.descricao}}</label>
                 </div>
-                <button>
+               <button onclick="excluirTarefa({{this.id}})">
                     <img src="/imagens/X-icon.png" alt="icone de x para excluir uma tarefa">
                 </button>
             </form>
@@ -25,7 +25,7 @@
 
         <div class="informações">
             <p> {{quantidadeTarefas}} tarefas completas</p>
-            <a href="">Limpa tarefas</a>
+            <a href="limpartarefas ">Limpa tarefas</a>
             <div class="botoes">
                 <a href="/" class="active" >todas</a>
                 <a href="/ativas">ativas</a>
