@@ -42,17 +42,15 @@ app.get('/', (requisição, resposta)=>{
             return console.log(erro)
         }
 
-        console.tarefas = dados.map((dado) =>{
+        const tarefas = dados.map((dado) =>{
             return {
                 id: dado.id,
                 descricao: dado.descricao,
                 completa: dado.completa === 0 ? false : true
             }
         })
-
+        resposta.render('home', {tarefas})
     })
-
-    resposta.render('home')
 })
 
 
